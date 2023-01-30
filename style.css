@@ -1,0 +1,163 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: #ECECEC;
+}
+
+header{
+  background-color: #4F50FE;
+  padding: 16px 0;
+}
+
+nav{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+nav h1{
+  font-weight: 800;
+  font-size: 25px
+}
+
+nav ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-aboutStore{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.store-image img{
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.sub-texts{
+  margin: 20px 0;
+}
+
+.sections-titles{
+  color: #4F50FE;
+  font-style: italic;
+  padding: 10px 0;
+  border-bottom: 4px solid #4F50FE;
+  margin-bottom: 20px
+}
+
+.store-about p{
+  margin-top: 20px;
+}
+
+.wrapper-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 13px;
+}
+
+.cards{
+  border-radius: 5px;
+  padding: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-card{
+  max-height: 400px;
+  max-width: 300px;
+}
+
+.img-card img{
+  height: 100%;
+  width: 100%
+}
+
+.details-product{
+  width: 100%;
+  text-align: center;
+}
+
+.details-product p{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.details-product h3{
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.details-product button{
+  margin-top: 10px;
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media(max-width:820px) {
+  nav{
+    padding: 0 20px;
+  }
+
+  .section-aboutStore{
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .wrapper-cards{
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .products{
+    padding: 0 20px;
+  }
+}
+
+@media(max-width:560px) {
+  nav{
+    padding: 0 20px;
+  }
+
+  .section-aboutStore{
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .wrapper-cards{
+    grid-template-columns: repeat(1, 2fr);
+  }
+
+  .products{
+    padding: 0 20px;
+  }
+}
